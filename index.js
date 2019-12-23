@@ -1,19 +1,16 @@
 $(document).ready(function(){
   //頁面滑動
   const navList = $('.navbar-nav .nav-link');
-  navList.click(function(){
-    const targetId = $(this).attr('href');
-    const targetTop = $(targetId).offset().top;
-    $('html,body').stop().animate({
-      scrollTop: targetTop + 'px',
-    },1000)
-  });
+  const menuBar = $('#menuBar a');
+  console.log(navList, menuBar);
+  navList.click(scrollTodo);
+  menuBar.click(scrollTodo);
 
 //meau隨著頁面滑動
   $(window).scroll(function(){
-    const meau = $('#meauBar')
+    const menu = $('#menuBar')
     const scrollTop = $(this).scrollTop()
-    meau.stop().animate({
+    menu.stop().animate({
       'top': scrollTop + 300
     }, 500)
   });
@@ -21,5 +18,13 @@ $(document).ready(function(){
 
 });
 
+
+function scrollTodo(){
+  const targetId = $(this).attr('href');
+  const targetTop = $(targetId).offset().top;
+  $('html,body').stop().animate({
+    scrollTop: targetTop + 'px',
+  },600);
+}
 
 

@@ -34,8 +34,8 @@
   width: 50px;
 }
 
-/* meauBar */
-#meauBar {
+/* menuBar */
+#menuBar {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -47,20 +47,24 @@
   box-shadow: 2px 3px 4px rgb(97, 85, 85);
 }
 
-#meauBar li {
+#menuBar li {
   padding: 10px 20px;
+  color: #fff;
+}
+
+#menuBar li:hover {
+  background: #b17c59;
+  border-radius: 5px;
+}
+
+#menuBar li a {
+  text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
 
-#meauBar li:hover {
-  background: #885d40;
-  border-radius: 5px;
-}
-
-#meauBar li a {
-  text-decoration: none;
-  color: #fff;
+#menuBar li a:hover {
+  color: #f0b811;
 }
 
 
@@ -76,6 +80,16 @@
 /* 首頁跟關於我的照片 */
 .mypic:hover {
   opacity: 0.7;
+}
+
+#home h1 {
+  text-shadow: 2px 2px rgb(197, 194, 194);
+  cursor: pointer;
+  transition: 2s;
+}
+
+#home h1:hover {
+  transform: rotate(180deg);
 }
 
 /* about */
