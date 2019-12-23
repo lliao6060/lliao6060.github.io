@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./scroll-bst/scroll-nav.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="scroll-bst/jquery-easing.js"></script>
+
+  <title>my web</title>
+</head>
+<body>
+    <nav class="mynavbar navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#home">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/516RkpesRIL._SX522_.png">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon">
+            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/hamburger-menu-1486500-1257309.png"alt="#">
+          </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link js-scroll-trigger" href="#home">首頁 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#favourite">我的最愛</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#job" data-toggle="modal">工作經驗</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--alert--->
+        <div class="welcome-alert alert alert-warning alert-dismissible fade show text-center" role="alert">
+          <strong>歡迎來到本站！您可點選右方按鈕關閉</strong>
+          <button type="button" class="close" data-dismiss="alert" >
+            <span>&times;</span>
+          </button>
+        </div>
+        <!--alert--->
+
+        
+        <div class="container">
+          <!--home--->
+          <div id="home">
+            <div class="row">
+  
+              <div class="col-md-6 col-12">
+                <img class="mypic" src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/72569222_2860169357379968_989258507322654720_o.jpg?_nc_cat=108&_nc_oc=AQmPP_LplUnS9WQL_2n9jltVcAP_6SUAS720Gqw5w3pxdar0m0TT4hAJrFJkhRvqlww&_nc_ht=scontent.ftpe7-3.fna&oh=8a04fd367ed32cbf2cc9bae4b8880d6d&oe=5E4B2B05" alt="#">
+              </div>
+
+              <div class="col-md-6 col-12 mt-md-0 mt-5 text-center align-self-center">
+                  <h1>hello I'm Lindy Liao</h1>
+              </div>
+  
+            </div>
+          </div>
+          <!--home--->
+
+          <!--about--->
+          <div id="about">
+            <div class="row">
+
+              <div class="col-md-6 col-12 mt-md-2 mt-5">
+                <h2>關於我</h2>
+                <div class="accordion myaccordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                          姓名
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                      <div class="card-body">
+                        廖羚佑
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                          生日
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        1994/12/07
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                          星座  / 血型
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        射手座Ｂ型
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                          興趣  / 座右銘
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!-- Accordion end --->
+                <div class="link-icon btns text-center mt-5">
+                  <img src="./img/facebook.png" class="mr-2" style="width: 50px;" alt="fb icon">
+                  <img src="./img/line.png" class="mr-2" style="width: 50px;" alt="line icon">
+                  <img src="./img/instagram.png" style="width: 50px;" alt="ins icon">
+                </div>
+              </div><!-- col end -->
+              <div class="col-md-6 col-12 order-md-last order-first mypic">
+                <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-9/71775170_2860175794045991_6120949685294202880_o.jpg?_nc_cat=111&_nc_oc=AQnGxXd_oPdg62RiXpwmdNVvOuYlJfCuV3eSJERKVW26_lmleUXuwnHNjnftj3wAWnI&_nc_ht=scontent.ftpe7-2.fna&oh=4a81c3e9607cb2b34412a9b1ce9385b4&oe=5E64FBE0" alt="#">
+              </div>
+          
+            </div>
+          </div>
+          <!--about end-->
+
+             
+          <!--favourite-->
+          <div id="favourite">
+            <div class="row">
+              <div class="col-lg-6 col-12 mt-md-0">
+                <h2>個人推薦</h2>              
+                <div class="card-group fav-card">
+                  <!--火鍋-->
+                  <div class="card">
+                    <div class="img-zoom">
+                      <img src="http://www.tony60533.com/wp-content/uploads/pixnet/1431019864-1498064128.jpg" class="card-img-top" alt="滿堂紅火鍋">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">滿堂紅火鍋</h5>
+                      <p class="card-text">
+                        滿堂紅火鍋主打麻辣火鍋,採吃到飽計價方式,但食材品質不打折扣，尤其肉品更是高級，採用了美國肉協評核的「白金級牛肉」，讓每位饕客都能享受頂級的火鍋饗宴。
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-address">地址：104台北市中山區松江路185號</small>
+                    </div>
+                  </div>
+                  <!--拉麵-->
+                  <div class="card">
+                    <div class="img-zoom">
+                      <img src="https://pic.pimg.tw/reinmiso/1532962704-1353657608.jpg" class="card-img-top" alt="麵屋輝拉麵">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">麵屋輝拉麵</h5>
+                      <p class="card-text">
+                        位於松江南京捷運站附近的日本道地拉麵店,也被綜藝節目「木曜四超玩」介紹過～若喜歡重口味的朋友千萬別錯過！<b>（已歇業）</b>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-address">地址：104台北市中山區伊通街8-1號</small>
+                    </div>
+                  </div>
+
+                  <div class="w-100"></div> <!--到下一欄--->
+
+                  <!--燒肉-->
+                  <div class="card">
+                    <div class="img-zoom">
+                      <img src="http://hutong.com.tw/userfiles/cgmdcf80f17cef1f390ae2c087094088cb4727.jpg" class="card-img-top" alt="胡同燒肉">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">胡同燒肉</h5>
+                      <p class="card-text">說到燒肉就立刻想到胡同燒肉這家店,有非常多的連鎖店,肉質好～服務好～只可惜價格稍偏中高價位,個人覺得如果預算還OK的話務必去試試！</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-address">地址：<br/>台北市大安區敦化南路一段161巷17號</small>
+                    </div>
+                  </div>
+                  <!--壽司-->
+                  <div class="card">
+                    <div class="img-zoom">
+                      <img src="https://lh3.googleusercontent.com/XDuPUy9k4WHxEZbvYB6zXcbLdTFohjBmEYs6HOuPif_ZD18dDKto_MQfEF5GbHHPKJb_sXaF1tZb6FeVfSG0WR1hI4cqqQ=s600" class="card-img-top" alt="HAMA SUSHI">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">HAMA壽司</h5>
+                      <p class="card-text">說到壽司店會想到很多間,像是藏壽司或者壽司郎及爭鮮等等...但我個人最喜歡這家,品項多價格又不貴</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-address">地址：<br/>105台北市松山區南京東路三段270號</small>
+                    </div>
+                  </div>
+
+                </div><!--card-group end-->
+              </div><!--col end-->
+
+
+              <div class="col-lg-6 col-12 mt-md-0 mt-5">
+                
+                <!--幻燈片區--->
+                <h2>美食查詢網站推薦</h2>
+                <div id="mycarousel">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <!--圖片--->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="https://ifoodie.tw/" target="_blank">
+                        <img src="https://www.pkstep.com/wp-content/uploads/2017/08/%E6%84%9B%E9%A3%9F%E8%A8%98-ifoodie-min.png" class="d-block w-100" alt="愛食記">
+                        </a>
+                      </div>
+
+                      <div class="carousel-item">
+                        <a href="https://www.popdaily.com.tw/" target="_blank">
+                          <img src="https://lh3.googleusercontent.com/-tbw0BJVlUVP62w3vwf7_lEub9AWCVODj8gWtl8P67PxSlwhgvIogYINXJqP9v6I_Q" class="d-block w-100" alt="PopDaily波波黛莉的異想世界">
+                        </a>
+                      </div>
+
+                      <div class="carousel-item">
+                        <a href="https://www.google.com/maps" target="_blank">
+                        <img src="https://images.zi.org.tw/kocpc/2018/09/1536575569-b5a02104ab014bf944ab9a3f7c4f6fe2.jpg" class="d-block w-100" alt="Google地圖">
+                        </a>
+                      </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+
+                  </div><!--carouselEnd--->
+                </div>
+                    
+                <!--NavTab--->
+                <div class="nav mynav nav-pills mt-5" id="nav-pills" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-intro-tab" data-toggle="pill" href="#nav-intro">介紹</a>
+                  <a class="nav-item nav-link" id="nav-pot-tab" data-toggle="pill" href="#nav-pot">火鍋</a>
+                  <a class="nav-item nav-link" id="nav-kow-tab" data-toggle="pill" href="#nav-kow">燒烤</a>
+                  <a class="nav-item nav-link" id="nav-men-tab" data-toggle="pill" href="#nav-men">拉麵</a>
+                  <a class="nav-item nav-link" id="nav-sushi-tab" data-toggle="pill" href="#nav-sushi">壽司</a>
+                </div>
+
+                <div class="my-tab tab-content" id="nav-tabContent">
+                  <!--介紹-->
+                  <div class="tab-pane fade show active" id="nav-intro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium nobis assumenda natus, numquam sit dignissimos distinctio consequuntur, iure et error non quia a provident, repudiandae molestiae? Labore, perferendis soluta!
+                    Itaque, sunt molestias. Enim necessitatibus laboriosam, rem libero sit unde provident nisi repudiandae non facilis, modi hic temporibus incidunt ipsam rerum iusto quia? Accusantium, corporis ratione veritatis earum perferendis quae.
+                    Consequuntur reiciendis temporibus eum velit sed sequi distinctio sint commodi totam iusto nobis nisi iste exercitationem, ad corporis magnam perferendis, natus hic neque tempore beatae laboriosam, provident facilis quidem! Voluptatibus.
+                  </div>
+                  <!--火鍋-->
+                  <div class="tab-pane fade show " id="nav-pot">
+                      火鍋的起源是遠古華夏民族以水或湯導熱鍋來涮煮食物的烹調方式。<br/>
+                      其特色為邊煮邊吃，由於鍋本身具有保溫效果，因此吃的時候食物仍熱氣騰騰。<br/>
+                      現在火鍋一般指源於中國川渝地區船工的麻辣火鍋，與中國北方的涮羊肉有很大區別。<br/>
+                      典型的火鍋食材，包括： 火鍋料、海鮮、泡麵、肉片、豆腐、香菇、丸子、冬粉、蔬菜等等，將其放入煮開的鍋底燙熟後食用。有些吃法還會蘸上調味料
+                  </div>
+                  <!--燒烤-->
+                  <div class="tab-pane fade" id="nav-kow">
+                      燒烤，被認為是人類最原始的烹調方式。是以燃料加熱和乾燥空氣，並把食物放置於熱乾空氣中一個比較接近熱源的位置來加熱食物。<br/>
+                      一般來說，燒烤是在火上將食物烹調至可食用，在現代社會，由於有多種用火方式，燒烤方式也逐漸多樣化，發展出各式燒烤爐、燒烤架、燒烤醬等。燒烤本身也成為一種多人聚會休閒娛樂方式或者是生意。獨自燒烤在現代社會中幾乎是很少見的，不論在亞洲、美洲和歐洲，燒烤通常是小至家庭，大至學校的集體活動。<br/>
+                      由於將肉類烘烤時會產生煙霧，常見的燒烤都是在戶外進行。但煙霧可以使用強力通風來大幅減少，因此也有餐廳也發展出室內燒烤的用餐型式，在亞洲如日本、韓國、台灣、泰國等地，稱之為燒肉店，也就是在桌子中間有燒烤架，桌子上方有強力的抽風機，在燒烤架上放無煙木炭，架上網架或欄架讓消費者自行將生肉烤熟的方式。<br/>                   
+                      雖然燒烤主要指烘烤肉類，但今日可烘烤的食材相當多種，可說是任何食材包括有蔬菜、水果等都可以烘烤，亞洲常見的還有豆腐、香菇、青椒、海鮮等都是燒烤時常見的。<br/>                   
+                      在中國食品方面，有一種叫燒味類，包括：燒鵝、豉油雞、燒肉、叉燒等等，不是食客自己即燒即食的一類燒烤，但是英文也是叫作BBQ，這類食品常見於中國南方和香港。
+                  </div>
+                  <!--拉麵-->
+                  <div class="tab-pane fade" id="nav-men">
+                      拉麵，或稱手拉麵、抻麵，做法是將揉好的麵團拉長，摺疊，再拉長，反覆若干次，直到麵條足夠細為止。優秀的師傅能將麵條拉得又細又長，口感勁道十足。<br/>
+                      因為拉麵流行於中國西北，由於當地人飲食習慣，拉麵多為清真食品。其中蘭州牛肉麵最負盛名，除了對麵條的標準之外，對牛肉湯底，以及作為配菜的白蘿蔔、辣椒油、蒜苗等均有品質要求，稱之為「一清、二白、三紅、四綠、五黃」。拉麵向西傳播至新疆及中亞後，當地人將其與蔬菜炒制稱為「拉條子」。拉麵向東傳播至日本後，日本人用豬骨或海鮮熬製湯底，並根據當地風味配以不同蔬菜，成為日本拉麵。
+                  </div>
+                  <!--壽司-->
+                  <div class="tab-pane fade" id="nav-sushi">
+                      壽司（日語：寿司、鮓、鮨、寿し〔壽司〕／すし sushi）是一種日本料理，主要材料是用醋、糖、鹽調味過，以肥小而稍帶甜味的日本珍珠米所煮成的醋飯（日語：酢飯/すめし），降溫後加上魚肉、海鮮、蔬菜、雞蛋或其他肉類等作配料。醋飯原為一種保存食物的方法：以醋酸令食物的酸鹼值下降，抑制微生物生長，以減緩食物腐敗。<br/>
+                      壽司既可以作為小吃也可以作正餐，配料可以是生的、也可以是熟的，又或是醃過的。配料的不同，不同壽司的價格、水準差距甚大。<br/>
+                    
+                      壽司除了是日本人喜愛的食物之外，在日本以外地區也十分流行，世界各地迴轉壽司式的壽司店與包裝壽司也不勝其數。
+                  </div>
+                </div>
+              </div><!--col end-->
+            </div><!--row end-->
+          </div><!--favourite end-->
+
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+            工作經驗
+          </button> -->
+          
+          <!-- Modal -->
+          <div class="modal fade" id="job" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">工作經驗</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!--modal-body-->
+                <div class="modal-body">
+                  <div id="jobtb">
+                    <table class="table table-bordered table-hover p-2">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">時期</th>
+                          <th scope="col">內容</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>畢業</td>
+                          <td>2017年9月畢業</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>普客二四停車場（股）公司</td>
+                          <td>
+                            任職時間：2017年11月～2019年2月<br/>
+                            工作內容：全台停車場月租招募、現有客戶維護、發票開立寄送及日常行政庶務。
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>渣打國際商業銀行（股）公司</td>
+                          <td>
+                            任職時間：2019年2月～2019年10月<br/>
+                            工作內容：信用卡產品前端審核、協助客戶成功申辦信用卡及擔任徵信及客戶間的溝通橋樑。
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td colspan="2" class="text-center">To be continue...</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div><!--modal-body end-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div><!--modal-content end-->
+            </div><!--modal-dialog end-->
+          </div>
+
+        </div><!--container-->
+
+        
+        
+        <footer>
+          Copyrights&copy; By LINDY
+        </footer>
+  
+<script src="scroll-bst/scroll-nav.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
