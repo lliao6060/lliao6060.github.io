@@ -30,8 +30,40 @@
 }
 
 /* mobie navBar */
-.mynavbar-toggler-icon img {
+/* .mynavbar-toggler-icon img {
   width: 50px;
+} */
+#meauIcon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  transition: background 800ms ease-in;
+  position: absolute;
+  top: 15px;
+}
+
+#meauIcon .box1_style {
+  height: 5px;
+  background: black;
+  margin: 5px;
+}
+
+#meauIcon .blue,
+#meauIcon .white {
+  transition: transform 500ms ease-in,background 500ms ease-in;
+}
+
+/* 藉由#mobileMenuIcon屬性＝"true"時，套用ＣＳＳ */
+#mobileMenuIcon[aria-expanded='true'] #meauIcon .blue {
+  transform: translateY(150%) rotate(45deg);
+  background: #bd2f3d;
+}
+
+/* 藉由#mobileMenuIcon屬性＝"true"時，套用ＣＳＳ */
+#mobileMenuIcon[aria-expanded='true'] #meauIcon .white {
+  transform: translateY(-120%) rotate(-45deg);
 }
 
 /* menuBar */
@@ -65,6 +97,12 @@
 
 #menuBar li a:hover {
   color: #f0b811;
+}
+
+@media (max-width: 1110px){
+  #menuBar {
+    display: none;
+  }
 }
 
 
@@ -209,4 +247,11 @@ footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
+}
+
+
+
+
+img[alt='www.000webhost.com'] {
+  display: none;
 }

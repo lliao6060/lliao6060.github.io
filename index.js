@@ -2,7 +2,6 @@ $(document).ready(function(){
   //頁面滑動
   const navList = $('.navbar-nav .nav-link');
   const menuBar = $('#menuBar a');
-  console.log(navList, menuBar);
   navList.click(scrollTodo);
   menuBar.click(scrollTodo);
 
@@ -27,4 +26,4 @@ function scrollTodo(){
   },600);
 }
 
-
+AOS.init();
