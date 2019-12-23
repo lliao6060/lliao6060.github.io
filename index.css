@@ -19,8 +19,8 @@
   max-width: 165px;
 }
 
-
-.mynavbar a.nav-link {
+.mynavbar .nav-item a {
+  text-decoration: none;
   color: #656565;
   letter-spacing: 2.3px;
 }
@@ -34,7 +34,34 @@
   width: 50px;
 }
 
+/* meauBar */
+#meauBar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 300px;
+  right: 5px;
+  background: #d4834c;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px rgb(97, 85, 85);
+}
 
+#meauBar li {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#meauBar li:hover {
+  background: #885d40;
+  border-radius: 5px;
+}
+
+#meauBar li a {
+  text-decoration: none;
+  color: #fff;
+}
 
 
 
@@ -43,7 +70,7 @@
 #about,
 #favourite,
 #job {
-  padding-top: 30px;
+  padding-top: 85px;
 }
 
 /* 首頁跟關於我的照片 */
