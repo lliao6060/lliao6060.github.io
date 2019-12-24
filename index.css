@@ -39,11 +39,12 @@
   display: flex;
   flex-direction: column; 
   justify-content: center;
-  transition: background 800ms ease-in;
+  transition: background 800ms ease-in; /* 設定在background時變化 */
   position: absolute;
   top: 15px;
 }
 
+/* 共同樣式設定 */
 #meauIcon .box1_style {
   height: 5px;
   background: black;
@@ -52,7 +53,7 @@
 
 #meauIcon .blue,
 #meauIcon .white {
-  transition: transform 500ms ease-in,background 500ms ease-in;
+  transition: transform 500ms ease-in;
 }
 
 /* 藉由#mobileMenuIcon屬性＝"true"時，套用ＣＳＳ */
@@ -107,7 +108,7 @@
 
 
 
-/* 內容 */
+/* 內容上方留白 固定滑動時顯示位置 */
 #home,
 #about,
 #favourite,
@@ -251,7 +252,7 @@ footer {
 
 
 
-
+/* 把網站浮水印拿掉 */
 img[alt='www.000webhost.com'] {
   display: none;
 }
